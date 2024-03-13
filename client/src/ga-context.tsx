@@ -39,20 +39,6 @@ export function GAProvider(props: { children: React.ReactNode }) {
   );
 }
 
-// This is a custom hook to return the GA client id. It returns the
-// empty string until (and unless) it can determine that id from the GA object.
-export function useClientId() {
-  const [clientId, setClientId] = useState<string>("");
-  const { gtag } = useContext(GAContext);
-  useEffect(() => {
-    gtag((tracker) => {
-      setClientId(tracker.get("clientId"));
-    });
-  }, [gtag]);
-
-  return clientId;
-}
-
 export function useGA() {
   return useContext(GAContext);
 }
