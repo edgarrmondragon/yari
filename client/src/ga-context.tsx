@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 
 export interface GAData {
   gtag: GAFunction;
