@@ -64,7 +64,7 @@ export const CSP_SCRIPT_SRC_VALUES = [
   "'report-sample'",
   "'self'",
 
-  "www.google-analytics.com/analytics.js",
+  "www.googletagmanager.com/gtag/js",
 
   "assets.codepen.io",
   "production-assets.codepen.io",
@@ -104,7 +104,7 @@ export const CSP_DIRECTIVES = {
     "updates.developer.allizom.org",
     "updates.developer.mozilla.org",
 
-    "www.google-analytics.com",
+    "www.googletagmanager.com",
     "stats.g.doubleclick.net",
     "https://api.stripe.com",
   ],
@@ -146,7 +146,7 @@ export const CSP_DIRECTIVES = {
     "wikipedia.org",
     "upload.wikimedia.org",
 
-    "www.google-analytics.com",
+    "www.googletagmanager.com",
     "www.gstatic.com",
   ],
   "manifest-src": ["'self'"],
